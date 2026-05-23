@@ -1,0 +1,109 @@
+@import "colors.css";
+@import url("styles/leaf_inverse.css");
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif, FiraCode, JetBrainsMono Nerd Font;
+    all: unset;
+
+}
+
+window#waybar {
+    background-color: transparent;
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: @yellow;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+}
+
+#pill-center {
+  background-color: @bg0;
+  color: @green;
+  border-radius: 80px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+#pill-left {
+  background-color: @bg0;
+  border-radius: 6px;
+  margin-right: 13px;
+  padding-top: 0px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+
+#pill-right {
+  background-color: @bg0;
+  color: @blue;
+  border-radius: 80px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+#workspaces {
+    background-color: @bg0;
+    min-width: 40px;
+    font-size: 0.4rem;
+    font-weight: bold;
+    margin: 11px 0;
+    border-radius: 99px;
+}
+
+/* Any changes to workspace button will only reflect when that workspace is not active (i.e you aren't in that workspace).  */
+
+#workspaces button {
+    all: initial;
+    padding: 0px 6px;
+    color: @yellow;
+    opacity: 1;
+    margin: 0 5px;
+    padding: 0px 8px; /* The padding dimension is height : width */
+    font-weight: 900;
+    min-width: 4px;
+    font-size: 12px;
+
+}
+
+/* Workspace button empty.active is when you open a new workspace but it doesn't have any window or application in it.*/
+
+#workspaces button.empty.active {
+  opacity: 1;
+  border-radius: 2px;
+  padding: 0px 8px;
+  margin: 0px 5px;
+  background-color: alpha(@blue, 0.5);
+  color: @bgg;
+}
+
+/* Button.active is for active workspaces with an application in it.*/
+
+#workspaces button.active {
+    color: @fg1;
+    background-color: @red;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0.80;
+    padding: 0px 8px;
+}
+
+
+
+
+.modules-left {
+    margin-left: 13px;
+}
+
+.modules-right {
+    margin-right: 13px;
+    border-radius: 200px;
+}
+
+
