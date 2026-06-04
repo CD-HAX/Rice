@@ -1,74 +1,115 @@
-@import "colors.css";
+@import url("colors/colors.css");
 @import url("styles/leaf_inverse.css");
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif, FiraCode, JetBrainsMono Nerd Font;
     all: unset;
-
+    font-family: JetBrainsMono Nerd Font, Symbols Nerd Font, sans-serif;
+    border-radius : 4px;
 }
 
 window#waybar {
-    background-color: transparent;
+    all: unset;
+    background-color: inherit;
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: @yellow;
-    border-radius: 0 0 10px 10px;
+    border-radius: 4px 0px 10px 0px;
     font-weight: bold;
     border: none;
     background: transparent;
 }
 
-#pill-center {
+#clock {
   background-color: @bg0;
   color: @green;
-  border-radius: 80px;
-  margin-right: 0px;
+  border-radius: 4px;
   margin-top: 5px;
-  padding-right: 9px;
-  padding-left: 9px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 2px;
 }
 
-#pill-left {
+
+#pulseaudio {
   background-color: @bg0;
-  border-radius: 6px;
-  margin-right: 13px;
-  padding-top: 0px;
+  color: @purple;
+  border-radius: inherit;
+  margin-right: 6px;
+  margin-top: 5px;
+  padding-right: 10px;
+  padding-left: 9px;
+  min-width: 40px;
+}
+
+#memory {
+  background-color: @bg0;
+  margin-left: 6px;
+  margin-top: 4px;
+  padding: 4px 10px;
+  color: @bgr;
+}
+
+#tray {
+  background-color: @bg1;
+  color: @purple;
+  margin-left: 6px;
+  border-radius: inherit;
+  margin-top: 5px;
   padding-right: 2px;
-  padding-left: 2px;
+  padding-bottom: 1px;
 }
 
-
-#pill-right {
-  background-color: @bg0;
-  color: @blue;
-  border-radius: 80px;
-  margin-right: 0px;
+#network {
+  background-color: @bg1;
+  margin-left: 10px;
+  color: @green;
+  padding: 4px 2px;
   margin-top: 5px;
-  padding-right: 9px;
-  padding-left: 9px;
+  border-radius: inherit;
 }
+
+#power-profiles-daemon {
+  background-color: @bg0;
+  color: @purple;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-top: 5px;
+  padding-right: 2px;
+}
+
+
+#custom-swaync {
+  border-radius: 4px; /* Radius dimension, Top-left, bottom-left, bottom-right, top-right */
+  padding:4px 4px 2px 4px;    /* PADDING dimension TOP, RIGHT, BOTTOM, LEFT. Think of it as a clockwise line */
+  margin-top: 5px;
+  background-color: @bg1;
+
+}
+
+
 
 #workspaces {
     background-color: @bg0;
-    min-width: 40px;
-    font-size: 0.4rem;
+    min-width: 0px;
     font-weight: bold;
-    margin: 11px 0;
-    border-radius: 99px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-right: 2px;
+    border: 1px solid;
 }
 
 /* Any changes to workspace button will only reflect when that workspace is not active (i.e you aren't in that workspace).  */
 
 #workspaces button {
     all: initial;
-    padding: 0px 6px;
-    color: @yellow;
-    opacity: 1;
-    margin: 0 5px;
-    padding: 0px 8px; /* The padding dimension is height : width */
+    padding: 0px 10px;
+    color: @purple;
+    opacity: 0.6;
+    margin-top: 0px;
+    padding: 0px 10px; /* The padding dimension is height : width */
     font-weight: 900;
-    min-width: 4px;
-    font-size: 12px;
+    min-width: 0px;
+    font-size: 14px;
 
 }
 
@@ -77,32 +118,40 @@ window#waybar {
 #workspaces button.empty.active {
   opacity: 1;
   border-radius: 2px;
-  padding: 0px 8px;
-  margin: 0px 5px;
-  background-color: alpha(@blue, 0.5);
+  padding: 0px 10px 0px 10px;
+  background-color: alpha(@green, 0.8);
   color: @bgg;
+  font-size: 14px;
 }
 
-/* Button.active is for active workspaces with an application in it.*/
+/* Button.active is for active workspaces with an application in it. Changes to this also applies when you focus that workspace*/
 
 #workspaces button.active {
-    color: @fg1;
-    background-color: @red;
-    border-radius: 2px;
-    font-size: 12px;
-    opacity: 0.80;
-    padding: 0px 8px;
+    color: @blue;
+    border-radius: 0px;
+    font-size: 14px;
+    opacity: 1;
+    padding: 0px 10px;
+    margin: 0px;
 }
 
-
-
+tooltip {
+  background-color: @orange;
+  border: 1px solid @blue;
+  border-radius: 8px;
+}
+tooltip label {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px;
+}
 
 .modules-left {
-    margin-left: 13px;
+    margin-left: 10px;
 }
 
 .modules-right {
-    margin-right: 13px;
+    margin-right: 10px;
     border-radius: 200px;
 }
 

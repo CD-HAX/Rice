@@ -1,0 +1,9 @@
+{
+  "tray": {
+    "icon-size": 15,
+    "spacing": 10,
+    "icons": {
+      "network": "idk"
+    }
+  }
+}

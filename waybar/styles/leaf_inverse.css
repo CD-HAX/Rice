@@ -1,23 +1,32 @@
-#leaf-inverse {
-  background-color: @bg0;
-  border-radius: 6px;
-  margin: 2px;
-}
-
 #taskbar {
   background-color: @bg0;
-  border-radius: 6px;
-  padding-right: 2px;
-  
+  border-radius: 4px;
+  margin: 5px 6px 0 6px; 
 }
 
 #taskbar button {
   padding-right: 5px;
   padding-left: 5px;
+  border-radius: 6px;
 }
 
 #taskbar button.active {
   padding: 0px 5px;
-  background-color: @aqua;
-  border-radius: 0px 12px;
+  border-radius: 4px;
+}
+
+#taskbar button.empty {
+  border: none;
+}
+
+#window {
+  background-color: @bg0;
+  margin-top: 5px;
+  padding-right: 3px;
+  padding-left: 2px;
+  color: @aqua;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
 }
