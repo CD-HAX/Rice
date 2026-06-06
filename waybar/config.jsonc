@@ -23,7 +23,7 @@
         "network", "group/tray"
     ],
     "modules-right": [
-        "group/clock", "group/audio", "power-profiles-daemon", "group/sway"
+        "group/clock", "group/audio", "power-profiles-daemon", "custom/swaync"
     ]
 
 }

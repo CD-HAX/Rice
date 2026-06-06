@@ -1,0 +1,189 @@
+[
+  {
+    "active_tab_history": [],
+    "background_opacity": 0.800000011920929,
+    "id": 1,
+    "is_active": true,
+    "is_focused": true,
+    "last_focused": true,
+    "platform_window_id": null,
+    "tabs": [
+      {
+        "active_window_history": [
+          1
+        ],
+        "enabled_layouts": [
+          "fat",
+          "grid",
+          "horizontal",
+          "splits",
+          "stack",
+          "tall",
+          "vertical"
+        ],
+        "groups": [
+          {
+            "id": 1,
+            "windows": [
+              1
+            ]
+          }
+        ],
+        "id": 1,
+        "is_active": true,
+        "is_focused": true,
+        "layout": "fat",
+        "layout_opts": {
+          "bias": 50,
+          "full_size": 1,
+          "mirrored": "n"
+        },
+        "layout_state": {
+          "all_windows": {
+            "active_group_history": [
+              1
+            ],
+            "active_group_idx": 0,
+            "window_groups": [
+              {
+                "id": 1,
+                "window_ids": [
+                  1
+                ]
+              }
+            ]
+          },
+          "biased_map": {},
+          "class": "Fat",
+          "main_bias": [
+            0.5,
+            0.5
+          ],
+          "opts": {
+            "bias": 50,
+            "full_size": 1,
+            "mirrored": "n"
+          }
+        },
+        "title": "kitty @ ls",
+        "title_overridden": false,
+        "windows": [
+          {
+            "at_prompt": false,
+            "cmdline": [
+              "/usr/bin/zsh"
+            ],
+            "columns": 129,
+            "created_at": 1780482475450399938,
+            "cwd": "/home/dionysus",
+            "env": {
+              "CLUTTER_BACKEND": "wayland",
+              "COLORTERM": "truecolor",
+              "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1001/bus",
+              "DEBUGINFOD_URLS": "https://debuginfod.archlinux.org https://debuginfod.cachyos.org ",
+              "DESKTOP_SESSION": "hyprland",
+              "DISPLAY": ":1",
+              "ELECTRON_OZONE_PLATFORM_HINT": "auto",
+              "GBM_BACKEND": "nvidia-drm",
+              "GDK_BACKEND": "wayland",
+              "GDK_SCALE": "1",
+              "HL_INITIAL_WORKSPACE_TOKEN": "f70625db-c1ae-44eb-ada6-19e69b87739e",
+              "HOME": "/home/dionysus",
+              "HYPRCURSOR_SIZE": "18",
+              "HYPRCURSOR_THEME": "macOS",
+              "HYPRLAND_CMD": "Hyprland --watchdog-fd 4",
+              "HYPRLAND_INSTANCE_SIGNATURE": "39d7e209c79d451efab1b21151d5938289da838d_1780478596_362597181",
+              "KITTY_INSTALLATION_DIR": "/usr/lib/kitty",
+              "KITTY_PID": "9177",
+              "KITTY_PUBLIC_KEY": "1:3b<d$O1B*s15a-!0`RCpHH@yZ`-Hyn*GwO%Zi{tg",
+              "KITTY_SHELL_INTEGRATION": "enabled",
+              "KITTY_WINDOW_ID": "1",
+              "LANG": "en_IN",
+              "LC_ADDRESS": "en_IN",
+              "LC_IDENTIFICATION": "en_IN",
+              "LC_MEASUREMENT": "en_IN",
+              "LC_MONETARY": "en_IN",
+              "LC_NAME": "en_IN",
+              "LC_NUMERIC": "en_IN",
+              "LC_PAPER": "en_IN",
+              "LC_TELEPHONE": "en_IN",
+              "LC_TIME": "en_IN",
+              "LIBVA_DRIVER_NAME": "nvidia",
+              "LOGNAME": "dionysus",
+              "MAIL": "/var/spool/mail/dionysus",
+              "MOTD_SHOWN": "pam",
+              "MOZ_ENABLE_WAYLAND": "1",
+              "MOZ_ENALBE_WAYLAND": "1",
+              "OLDPWD": "/home/dionysus",
+              "PAM_KWALLET5_LOGIN": "/run/user/1001/kwallet5.socket",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+              "PWD": "/home/dionysus",
+              "QT_AUTO_SCREEN_SCALE_FACTOR": "1",
+              "QT_QPA_PLATFORM": "wayland",
+              "QT_QPA_PLATFORMTHEME": "qt6ct",
+              "QT_STLE_OVERRIDE": "kvantum",
+              "QT_WAYLAND_DISABLE_WINDOWDECORATION": "1",
+              "SDL_VIDEODRIVER": "wayland",
+              "SHELL": "/usr/bin/zsh",
+              "SHLVL": "0",
+              "TERM": "xterm-kitty",
+              "TERMINFO": "/usr/lib/kitty/terminfo",
+              "USER": "dionysus",
+              "WAYLAND_DISPLAY": "wayland-1",
+              "XCURSOR_SIZE": "24",
+              "XCURSOR_THEME": "macOS",
+              "XDG_BACKEND": "wayland",
+              "XDG_CURRENT_DESKTOP": "Hyprland",
+              "XDG_DATA_DIRS": "/home/dionysus/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+              "XDG_RUNTIME_DIR": "/run/user/1001",
+              "XDG_SEAT": "seat0",
+              "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+              "XDG_SESSION_CLASS": "user",
+              "XDG_SESSION_DESKTOP": "Hyprland",
+              "XDG_SESSION_ID": "2",
+              "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session1",
+              "XDG_SESSION_TYPE": "wayland",
+              "XDG_VTNR": "1",
+              "ZDOTDIR": "/usr/lib/kitty/shell-integration/zsh",
+              "_": "/usr/bin/kitty",
+              "_JAVA_AWT_WM_NONREPARENTING": "1",
+              "__GLX_VENDOR_LIBRARY_NAME": "nvidia"
+            },
+            "foreground_processes": [
+              {
+                "cmdline": [
+                  "kitten",
+                  "@",
+                  "ls"
+                ],
+                "cwd": "/home/dionysus",
+                "pid": 9284
+              }
+            ],
+            "has_activity_since_last_focus": false,
+            "id": 1,
+            "in_alternate_screen": false,
+            "is_active": true,
+            "is_focused": true,
+            "is_self": true,
+            "last_cmd_exit_status": 0,
+            "last_focused_at": 0.182542682,
+            "last_reported_cmdline": "kitty @ ls",
+            "lines": 32,
+            "needs_attention": false,
+            "neighbors": {
+              "bottom": []
+            },
+            "pid": 9182,
+            "session_name": "",
+            "title": "kitty @ ls",
+            "title_overridden": false,
+            "user_vars": {}
+          }
+        ]
+      }
+    ],
+    "wm_class": "kitty",
+    "wm_name": "kitty"
+  }
+]

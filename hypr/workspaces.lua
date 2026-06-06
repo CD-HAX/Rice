@@ -2,13 +2,15 @@
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
 
-hl.window_rule({
+local suppressMaximizeRule = hl.window_rule({
 	-- Ignore maximize requests from all apps. You'll probably like this.
 	name = "suppress-maximize-events",
 	match = { class = ".*" },
 
 	suppress_event = "maximize",
 })
+
+suppressMaximizeRule:set_enabled(true)
 
 hl.window_rule({
 	-- Fix some dragging issues with XWayland
@@ -44,4 +46,21 @@ hl.layer_rule({
 	match = { namespace = "waybar" },
 	blur = true,
 	ignore_alpha = 0.5,
+})
+
+hl.workspace_rule({
+	workspace = "1",
+	monitor = "DP-3",
+	persistent = true,
+})
+
+hl.workspace_rule({
+	workspace = "2",
+	monitor = "DP-2",
+	persistent = true,
+})
+
+hl.window_rule({
+	float = true,
+	match = { class = "kitty" },
 })

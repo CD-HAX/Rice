@@ -15,7 +15,7 @@
             "default": [
                 " ",
                 " ",
-                " "
+                "  "
             ]
         },
         "on-click": "pavucontrol"

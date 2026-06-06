@@ -95,7 +95,6 @@ window#waybar {
     border-radius: 4px;
     margin-top: 5px;
     margin-right: 2px;
-    border: 1px solid;
 }
 
 /* Any changes to workspace button will only reflect when that workspace is not active (i.e you aren't in that workspace).  */
@@ -152,7 +151,7 @@ tooltip label {
 
 .modules-right {
     margin-right: 10px;
-    border-radius: 200px;
 }
+
 
 

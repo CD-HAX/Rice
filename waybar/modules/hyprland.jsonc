@@ -27,6 +27,8 @@
     "hyprland/window": {
         "separate-outputs": true,
         "format": "{}",
+        "max-length": 15,
+        "tooltip": false,
         "rewrite": {
             "": ""
         }
