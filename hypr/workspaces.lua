@@ -48,18 +48,6 @@ hl.layer_rule({
 	ignore_alpha = 0.5,
 })
 
-hl.workspace_rule({
-	workspace = "1",
-	monitor = "DP-3",
-	persistent = true,
-})
-
-hl.workspace_rule({
-	workspace = "2",
-	monitor = "DP-2",
-	persistent = true,
-})
-
 hl.window_rule({
 	float = true,
 	match = { class = "kitty" },

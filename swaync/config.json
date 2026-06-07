@@ -1,133 +1,100 @@
 {
-  "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "right",
-  "positionY": "top",
-	"cssPriority": "user",
+    "$schema": "/etc/xdg/swaync/configSchema.json",
+    "positionX": "right",
+    "positionY": "top",
+    "cssPriority": "user",
 
-  "control-center-width": 380,
-  "control-center-height": 860, 
-  "control-center-margin-top": 2,
-  "control-center-margin-bottom": 2,
-  "control-center-margin-right": 1,
-  "control-center-margin-left": 0,
+    "layer": "overlay",
+    "control-center-layer": "top",
+    "layer-shell": true,
 
-  "notification-window-width": 400,
-  "notification-icon-size": 48,
-  "notification-body-image-height": 0,
-  "notification-body-image-width": 0,
+    "control-center-width": 400,
+    "control-center-height": 1020,
+    "control-center-margin-top": 10,
+    "control-center-margin-bottom": 10,
+    "control-center-margin-right": 10,
+    "control-center-margin-left": 0,
 
-  "timeout": 4,
-  "timeout-low": 2,
-  "timeout-critical": 6,
-  
-  "fit-to-screen": false,
-  "keyboard-shortcuts": true,
-  "image-visibility": "always",
-  "transition-time": 100,
-  "hide-on-clear": false,
-  "hide-on-action": false,
-  "script-fail-notify": true,
-  "scripts": {
-    "example-script": {
-      "exec": "echo 'Do something...'",
-      "urgency": "Normal"
-    }
-  },
-  "notification-visibility": {
-    "example-name": {
-      "state": "muted",
-      "urgency": "Low",
-      "app-name": "Spotify"
-    }
-  },
-  "widgets": [
-    "mpris",
-    "buttons-grid",
-    "volume",
-    "backlight",
-    "dnd",
-    "title",
-    "notifications"
-  ],
-  "widget-config": {
-    "title": {
-      "text": "Notifications",
-      "clear-all-button": true,
-      "button-text": "Clear All "
-    },
-    "dnd": {
-      "text": "Do not disturb",
-      "do-not-disturb-on-startup": false,
-     "do-not-disturb": false
+    "notification-window-width": 380,
+    "notification-icon-size": 50,
+    "notification-body-image-height": 200,
+    "notification-body-image-width": 200,
 
-    },
-    "label": {
-      "max-lines": 1,
-      "text": " "
-    },
-    "mpris": {
-      "image-size": 96,
-      "image-radius": 19,
-      "show-album-art": "playing",
-      "blacklist": [
-        "firefox",
-        "chromium",
-        "brave",
-        "mpv",
-        "playerctl"
-      ],
-      "autohide": true,
-      "prefer": ["spotify"]
-      
-    },
-    "volume": {
-      "label": "󰕾 ",
-        "show-per-app": false
-    },
-    "backlight": {
-      "label": "󰃠 ",
-      "device": "amdgpu_bl1",
-      "subsystem": "backlight", 
-      "min": 10
-    },
-    "buttons-grid": {
-      "actions": [
-        {
-          "label": "",
-          "command": "amixer set Master toggle",
-          "name": "btn-audio"
-        },
-        {
-          "label": "",
-          "command": "amixer set Capture toggle"
-        },
-        {
-          "label": " ",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/wifi.sh" 
-        },
-        {
-          "label": "󰂯",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/rofi-bluetooth"
-        },
-        {
-          "label": "󰏘",
-          "command": "hyprpicker"
-        },
+    "timeout": 8,
+    "timeout-low": 6,
+    "timeout-critical": 0,
 
-        {
-          "label": "󰋩",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/wall-changer.sh"
-        },
-        {     
-          "label": " ",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/screenshot.sh"
-        },
-        {
-          "label": "",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/powermenu.sh"
+    "fit-to-screen": false,
+    "keyboard-shortcuts": true,
+    "image-visibility": "when-available",
+    "transition-time": 200,
+    "hide-on-clear": false,
+    "hide-on-action": true,
+    "text-empty": "No Notifications",
+    "script-fail-notify": true,
+    "notification-visibility": {
+        "example-name": {
+            "state": "muted",
+            "urgency": "Low",
+            "app-name": "Spotify"
         }
-
-      ]
+    },
+    "widgets": [
+        "buttons-grid",
+        "mpris",
+        "volume",
+        "backlight",
+        "dnd",
+        "title",
+        "notifications"
+    ],
+    "widget-config": {
+        "mpris": {
+            "image-size": 60,
+            "image-radius": 0
+        },
+        "volume": {
+            "label": "  󰕾 ",
+            "expand-button-label": " ",
+            "collapse-button-label": " ",
+            "show-per-app": true,
+            "show-per-app-icon": true,
+            "show-per-app-label": true 
+        },
+        "backlight": {
+            "label": " 󰃟 "
+        },
+        "dnd": {
+            "text": "Do Not Disturb"
+        },
+        "title": {
+            "text": "Notifications Center",
+            "clear-all-button": true,
+            "button-text": " 󰆴 "
+        },
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": "󰃉",
+                    "type": "normal",
+                    "command": "hyprpicker",
+                    "right-click-command": "scrcpy --help | head -20 | foot -e less"
+                },
+                {
+                    "label": "",
+                    "type": "toggle",
+                    "active": false,
+                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-source-mute @DEFAULT_SOURCE@ 1 || pactl set-source-mute @DEFAULT_SOURCE@ 0'",
+                    "update-command": "sh -c '[[ $(pactl get-source-mute @DEFAULT_SOURCE@) == *yes* ]] && echo true || echo false'"
+                },
+                {
+                    "label": "",
+                    "type": "toggle",
+                    "active": false,
+                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-sink-mute @DEFAULT_SINK@ 1 || pactl set-sink-mute @DEFAULT_SINK@ 0'",
+                    "update-command": "sh -c '[[ $(pactl get-sink-mute @DEFAULT_SINK@) == *yes* ]] && echo true || echo false'"
+                }
+            ]
+        }
     }
-  }
 }
