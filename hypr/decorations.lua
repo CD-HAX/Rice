@@ -1,7 +1,7 @@
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
-
+require("colors")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
 	general = {
@@ -11,11 +11,9 @@ hl.config({
 		border_size = 2,
 
 		col = {
-			active_border = {
-				colors = { "rgba(176, 184, 70, 1)", "rgba(233, 177, 67, 1)", "rgba(69,133,136,1)", "rgba(204,36,29,1)" },
-				angle = 35,
-			},
-			inactive_border = "rgba(80, 73, 69, 1)",
+			active_border = active_border,
+			accent_green,
+			inactive_border = inactive_border,
 		},
 
 		-- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -28,7 +26,7 @@ hl.config({
 	},
 
 	decoration = {
-		rounding = 1,
+		rounding = 10,
 		rounding_power = 2,
 
 		-- Change transparency of focused and unfocused windows
@@ -39,7 +37,7 @@ hl.config({
 			enabled = true,
 			range = 4,
 			render_power = 3,
-			color = 0xee1a1a1a,
+			color = shadow_inactive,
 		},
 
 		blur = {
@@ -117,12 +115,5 @@ hl.config({
 hl.config({
 	master = {
 		new_status = "master",
-	},
-})
-
--- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
-hl.config({
-	scrolling = {
-		fullscreen_on_one_column = true,
 	},
 })
