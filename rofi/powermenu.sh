@@ -12,7 +12,6 @@
 # Current Theme
 dir="$HOME/.config/rofi/type-6/"
 theme='style-3'
-dir2 = "$HOME/.config/rofi/"
 
 # CMDs
 lastlogin="$(last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7)"
@@ -26,8 +25,8 @@ reboot=''
 lock=''
 suspend='󰏦'
 logout='󰗽'
-yes=''
-no=''
+yes='YES'
+no='NO'
 
 # Rofi CMD
 rofi_cmd() {
@@ -47,7 +46,7 @@ confirm_cmd() {
     -dmenu \
     -p 'Confirmation' \
     -mesg 'Are you Sure?' \
-    -theme ${dir2}/${theme}.rasi
+    -theme ${dir}/${theme}.rasi
 }
 
 # Ask for confirmation

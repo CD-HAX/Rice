@@ -6,12 +6,12 @@ version_check = false
 # The color which should be used as the source_color if no good color was found from an image.
 # Can be defined in any css format.
 # The cli flag will override this if used.
-fallback_color = "#ffbf9b"
+#fallback_color = "#ffbf9b"
 
 # Which color to choose if multiple good colors were found from an image.
 # choices: [darkness, lightness, saturation, less-saturation, value, closest-to-fallback]
 # The cli flag will override this if used.
-prefer = "saturation"
+prefer = "value"
 
 # Enables caching which will cache the colorscheme, custom colors, etc. into a cache folder located in
 # Windows: C:\Users\user\AppData\Roaming\InioX\matugen\cache\images\<file>
@@ -44,11 +44,10 @@ contrast = 1.0
 # Will set the source color index just like the `--source-color-index` CLI flag (0 - 4).
 # 0 = most dominant, 1 = 2nd most dominant, etc.
 # IF the CLI flag is specified, it will override this value.
-source_color_index = 0
 
 [config.wallpaper]
 # Whether to set the wallpaper or not
-set = false
+set = true
 
 # The base command to run for applying the wallpaper.
 # Keywords like {{ image }} or anything that works inside of hooks works here.
@@ -59,20 +58,22 @@ command = "awww img --transition-type center {{ image }}"
 # pre_hook = ""
 [templates.swaync]
 name = "swaync_colors"
-input_path = '~/.config/matugen/templates/swaync-colors.css'
+input_path = '~/.config/matugen/templates/waybar-colors.css'
 output_path = '~/.config/swaync/matugen/colors.css'
+post_hook = 'swaync-client -rs'
 
 [templates.rofi]
 name = "rofi_colors"
-input_path = '~/.config/matugen/templates/gruvbox_material.rasi'
-output_path = '~/.config/rofi/colors/gruvbox-material.rasi'
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors/rofi-colors.rasi'
+
 
 
 
 [templates.kitty]
 name = "kitty-colors"
 input_path = '~/.config/matugen/templates/kitty-colors.conf'
-output_path = '~/.config/kitty/gruvbox-colors.conf'
+output_path = '~/.config/kitty/theme-colors.conf'
 post_hook = 'pkill -USR1 kitty'
 
 
@@ -115,7 +116,7 @@ index = 1
 
 # Defaults to the type from CLI if unspecified.
 # One of `SchemeContent`, `SchemeExpressive`, `SchemeFidelity`, `SchemeFruitSalad`, `SchemeMonochrome`, `SchemeNeutral`, `SchemeRainbow`, `SchemeTonalSpot`, `SchemeVibrant`
-type = "SchemeFidelity"
+type = "SchemeTonalSpot"
 
 # For testing of the `--continue-on-error` flag
 # [templates.ishoulderror]

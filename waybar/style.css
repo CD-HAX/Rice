@@ -1,5 +1,5 @@
 @import url("colors/colors.css");
-@import url("styles/leaf_inverse.css");
+@import url("styles/taskbar.css");
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -10,9 +10,8 @@
 
 window#waybar {
     all: unset;
-    background-color: inherit;
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: @yellow;
+    background-color: transparent;
+    color: @secondary;
     border-radius: 4px 0px 10px 0px;
     font-weight: bold;
     border: none;
@@ -20,8 +19,8 @@ window#waybar {
 }
 
 #clock {
-  background-color: @bg0;
-  color: @green;
+  background-color: @surface_container;
+  color: @secondary;
   border-radius: 4px;
   margin-top: 5px;
   margin-right: 6px;
@@ -29,10 +28,33 @@ window#waybar {
   padding-bottom: 2px;
 }
 
+menuitem label {
+  color: @secondary;
+  background-color: @surface_container;
+  border-radius: 1px;
+  padding: 0px 10px;
+}
+
+menuitem:hover label {
+  background-color: #ffffff;
+  color: @secondary;
+}
+
+#tray>.passive {
+  -gtk-icon-effect: dim;
+}
+
+
+#tray>.needs-attention {
+  -gtk-icon-effect: highlight;
+  color: @secondary;
+
+}
+
 
 #pulseaudio {
-  background-color: @bg0;
-  color: @purple;
+  background-color: @surface_container;
+  color: @secondary;
   border-radius: inherit;
   margin-right: 6px;
   margin-top: 5px;
@@ -42,16 +64,16 @@ window#waybar {
 }
 
 #memory {
-  background-color: @bg0;
+  background-color: @surface_container;
   margin-left: 6px;
   margin-top: 4px;
   padding: 4px 10px;
-  color: @bgr;
+  color: @secondary;
 }
 
 #tray {
-  background-color: @bg1;
-  color: @purple;
+  background-color: @surface_container;
+  color: @secondary;
   margin-left: 6px;
   border-radius: inherit;
   margin-top: 5px;
@@ -60,17 +82,17 @@ window#waybar {
 }
 
 #network {
-  background-color: @bg1;
+  background-color: @surface_container;
   margin-left: 10px;
-  color: @green;
+  color: @secondary;
   padding: 4px 2px;
   margin-top: 5px;
   border-radius: inherit;
 }
 
 #power-profiles-daemon {
-  background-color: @bg0;
-  color: @purple;
+  background-color: @surface_container;
+  color: @secondary;
   border-radius: 4px;
   margin-right: 6px;
   margin-top: 5px;
@@ -82,14 +104,15 @@ window#waybar {
   border-radius: 4px; /* Radius dimension, Top-left, bottom-left, bottom-right, top-right */
   padding:4px 4px 2px 4px;    /* PADDING dimension TOP, RIGHT, BOTTOM, LEFT. Think of it as a clockwise line */
   margin-top: 5px;
-  background-color: @bg1;
+  background-color: @surface_container;
+  color: @secondary;
 
 }
 
 
 
 #workspaces {
-    background-color: @bg0;
+    background-color: @surface_container;
     min-width: 0px;
     font-weight: bold;
     border-radius: 4px;
@@ -102,7 +125,7 @@ window#waybar {
 #workspaces button {
     all: initial;
     padding: 0px 10px;
-    color: @purple;
+    color: @secondary_container;
     opacity: 0.6;
     margin-top: 0px;
     padding: 0px 10px; /* The padding dimension is height : width */
@@ -118,15 +141,15 @@ window#waybar {
   opacity: 1;
   border-radius: 2px;
   padding: 0px 10px 0px 10px;
-  background-color: alpha(@green, 0.8);
-  color: @bgg;
+  background-color: @surface_container_high;
+  color: @tertiary;
   font-size: 14px;
 }
 
 /* Button.active is for active workspaces with an application in it. Changes to this also applies when you focus that workspace*/
 
 #workspaces button.active {
-    color: @blue;
+    color: @secondary;
     border-radius: 0px;
     font-size: 14px;
     opacity: 1;
@@ -135,8 +158,9 @@ window#waybar {
 }
 
 tooltip {
-  background-color: @orange;
-  border: 1px solid @blue;
+  background-color: @surface_container_highest;
+  border: 1px solid @foreground;
+  color: @primary_container;
   border-radius: 8px;
 }
 tooltip label {

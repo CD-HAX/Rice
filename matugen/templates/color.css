@@ -13,5 +13,7 @@
   --surface-variant: {{colors.surface_variant.dark.hex}};
   
   --outline: {{colors.outline.dark.hex}};
+  --error: {{colors.error.dark.hex}};
+
 }
 
