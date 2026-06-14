@@ -1,0 +1,36 @@
+{
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "icon-size": 16,
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "all-outputs": false,
+            "active-only": false,
+            "persistent-workspaces": {}
+        }
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "Alacritty"
+        ]
+    },
+    "hyprland/window": {
+        "separate-outputs": true,
+        "format": "{}",
+        "max-length": 15,
+        "tooltip": false,
+        "rewrite": {
+            "": ""
+        }
+    }
+}

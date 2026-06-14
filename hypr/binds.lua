@@ -5,8 +5,9 @@
 -- Set programs that you use
 local terminal = "kitty"
 local fileManager = "dolphin"
-local menu = "~/.config/rofi/type-7/launcher.sh"
+local menu = "~/.config/rofi/launcher.sh"
 local browser = "helium-browser"
+local logoutmenu = "~/.config/rofi/powermenu.sh"
 --local msgs = "vesktop"
 
 ---------------
@@ -60,6 +61,8 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(Alt .. " + R", hl.dsp.exec_cmd("pkill waybar; waybar &"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(Alt .. " + L", hl.dsp.exec_cmd(logoutmenu))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
@@ -86,6 +89,10 @@ hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(mainMod .. " + H", hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. " + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. " + I", hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. " + K", hl.dsp.window.move({ direction = "down" }))
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind(

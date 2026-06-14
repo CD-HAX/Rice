@@ -1,0 +1,19 @@
+/* ~/.config/matugen/templates/colors.css */
+
+:root {
+  --primary: {{colors.primary.dark.hex}};
+  --on-primary: {{colors.on_primary.dark.hex}};
+  --primary-container: {{colors.primary_container.dark.hex}};
+  
+  --background: {{colors.background.dark.hex}};
+  --on-background: {{colors.on_background.dark.hex}};
+  
+  --surface: {{colors.surface.dark.hex}};
+  --on-surface: {{colors.on_surface.dark.hex}};
+  --surface-variant: {{colors.surface_variant.dark.hex}};
+  
+  --outline: {{colors.outline.dark.hex}};
+  --error: {{colors.error.dark.hex}};
+
+}
+

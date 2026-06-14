@@ -1,0 +1,39 @@
+{
+ "group/hyprland": {
+    "orientation": "horizontal",
+    "modules": [
+      "hyprland/workspaces", "wlr/taskbar", "hyprland/window"
+    ]
+  },
+
+
+  "group/tray": {
+    "orientation": "inherit",
+    "modules": [
+      "tray"
+    ]
+  },
+
+  "group/audio": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio"
+    ]
+  },
+
+  "group/clock": {
+    "orientation": "inherit",
+    "modules": [
+      "clock"
+    ]
+  },
+
+  "group/sway": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/swaync"
+    ]
+  }
+
+
+}

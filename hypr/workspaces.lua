@@ -1,12 +1,6 @@
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
-
--- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/
--- and https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
-
--- Example window rules that are useful
-
 hl.window_rule({
 	-- Ignore maximize requests from all apps. You'll probably like this.
 	name = "suppress-maximize-events",
@@ -30,14 +24,6 @@ hl.window_rule({
 	no_focus = true,
 })
 
--- Layer rules also return a handle.
--- local overlayLayerRule = hl.layer_rule({
---     name  = "no-anim-overlay",
---     match = { namespace = "^my-overlay$" },
---     no_anim = true,
--- })
--- overlayLayerRule:set_enabled(false)
-
 -- Hyprland-run windowrule
 hl.window_rule({
 	name = "move-hyprland-run",
@@ -57,4 +43,15 @@ hl.layer_rule({
 	match = { namespace = "waybar" },
 	blur = true,
 	ignore_alpha = 0.5,
+})
+
+hl.layer_rule({
+	match = { namespace = "kitty" },
+	blur = true,
+	ignore_alpha = 0.5,
+})
+
+hl.window_rule({
+	float = false,
+	match = { class = "kitty" },
 })
