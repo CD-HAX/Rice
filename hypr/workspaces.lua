@@ -45,7 +45,13 @@ hl.layer_rule({
 	ignore_alpha = 0.5,
 })
 
+hl.layer_rule({
+	match = { namespace = "kitty" },
+	blur = true,
+	ignore_alpha = 0.5,
+})
+
 hl.window_rule({
-	float = true,
+	float = false,
 	match = { class = "kitty" },
 })
