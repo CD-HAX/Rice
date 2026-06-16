@@ -1,33 +1,33 @@
-@define-color background #101417;
-@define-color foreground #ffffff;
+@define-color background #19120d;
+@define-color foreground #f0dfd7;
 
 /* SURFACES (this is what gives depth) */
-@define-color surface #101417;
-@define-color surface_bright #4c5055;
-@define-color surface_container #2d3135;
-@define-color surface_container_high #383c40;
-@define-color surface_container_highest #43474b;
+@define-color surface #19120d;
+@define-color surface_bright #413731;
+@define-color surface_container #261e19;
+@define-color surface_container_high #312823;
+@define-color surface_container_highest #3d332d;
 
 /* PRIMARY ACCENT SYSTEM */
-@define-color primary #e3f2ff;
-@define-color on_primary #000000;
-@define-color primary_container #8fc9f2;
-@define-color on_primary_container #000000;
+@define-color primary #ffb786;
+@define-color on_primary #502400;
+@define-color primary_container #6e390e;
+@define-color on_primary_container #ffdcc6;
 
 /* SECONDARY ACCENT */
-@define-color secondary #e3f2ff;
-@define-color on_secondary #000000;
-@define-color secondary_container #b3c5d4;
+@define-color secondary #e5bfa8;
+@define-color on_secondary #422b1b;
+@define-color secondary_container #5b4130;
 
 /* TERTIARY (optional accent variety) */
-@define-color tertiary #f5edff;
-@define-color on_tertiary #000000;
+@define-color tertiary #c9ca93;
+@define-color on_tertiary #31320a;
 
 /* STATES */
-@define-color error #ffece9;
-@define-color on_error #000000;
-@define-color error_container #ffaea4;
+@define-color error #ffb4ab;
+@define-color on_error #690005;
+@define-color error_container #93000a;
 
 /* OUTLINES / BORDERS */
-@define-color outline #ebf1f8;
-@define-color outline_variant #bdc3ca;
+@define-color outline #9f8d83;
+@define-color outline_variant #52443c;

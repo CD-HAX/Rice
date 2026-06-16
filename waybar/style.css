@@ -4,7 +4,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     all: unset;
-    font-family: JetBrainsMono Nerd Font, Symbols Nerd Font, sans-serif;
+    font-family: InputMonoNarrow-Medium, Symbols Nerd Font, sans-serif;
     border-radius : 4px;
 }
 

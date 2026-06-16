@@ -5,3 +5,4 @@ theme=matugen
 Default=heliumbrowser
 KvArcDark%23=helium-browser
 KvGnomish=helium-browser
+matugen=heliumbrowser, brave, dolphin
