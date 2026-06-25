@@ -55,6 +55,6 @@ hl.layer_rule({
 -- Window_rule for bluring applications running inside term
 
 hl.window_rule({
-	match = { namespace = "nvim" },
-	opacity = "0.9 override",
+	match = { class = "kitty", title = "^nvim" },
+	opacity = "0.9",
 })
