@@ -64,7 +64,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(Alt .. " + L", hl.dsp.exec_cmd(logoutmenu))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(msgs))
-
+hl.bind(Alt .. " + S", hl.dsp.exec_cmd("hyprshot -m window ~/Pictures/screenshot/"))
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do

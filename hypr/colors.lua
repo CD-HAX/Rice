@@ -1,21 +1,21 @@
 -- Hyprland Colors (Matugen Safe)
 
 -- Active / inactive borders
-active_border = "#bbcf82"
-inactive_border = "#46483c"
+active_border = "#c3cd7c"
+inactive_border = "#47483b"
 
 -- Shadows
-shadow = "#12140d"
-shadow_inactive = "#46483c"
-shadow_active = "#bbcf82"
+shadow = "#13140d"
+shadow_inactive = "#47483b"
+shadow_active = "#c3cd7c"
 
 -- Text colors
-text = "#e3e3d7"
-text_inactive = "#c6c8b8"
+text = "#e5e3d6"
+text_inactive = "#c8c7b7"
 
 -- Accent colors
 accent_red = "#ffb4ab"
-accent_blue = "#bbcf82"
-accent_green = "#a1d0c6"
-accent_orange = "#c3caa9"
-accent_purple = "#434931"
+accent_blue = "#c3cd7c"
+accent_green = "#a2d0c2"
+accent_orange = "#c7c9a7"
+accent_purple = "#46492f"
