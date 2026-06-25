@@ -51,7 +51,7 @@ set = true
 # The base command to run for applying the wallpaper.
 # Keywords like {{ image }} or anything that works inside of hooks works here.
 # You could also set a static color if you use the color keywords and the wallpaper setter supports it.
-command = "awww img --transition-type center {{ image }}"
+command = "awww gif --transition-type center {{ image }}"
 
 # For example, killing the wallpaper daemon. Usage is like a normal hook.
 # pre_hook = ""
@@ -104,6 +104,10 @@ name = "kvantum-colors"
 input_path = '~/.config/matugen/templates/kvantum.kvconfig'
 output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
 
+[templates.nvim]
+name = "Neovim"
+input_path = '~/.config/matugen/templates/nvim-colors.lua'
+output_path = '~/.config/nvim/lua/carwash/palette.lua'
 
 [templates.KDE]
 name = "KDE-colors"
@@ -121,7 +125,7 @@ index = 1
 
 # Defaults to the type from CLI if unspecified.
 # One of `SchemeContent`, `SchemeExpressive`, `SchemeFidelity`, `SchemeFruitSalad`, `SchemeMonochrome`, `SchemeNeutral`, `SchemeRainbow`, `SchemeTonalSpot`, `SchemeVibrant`
-type = "SchemeContent"
+type = "SchemeFidelity"
 
 # For testing of the `--continue-on-error` flag
 # [templates.ishoulderror]
