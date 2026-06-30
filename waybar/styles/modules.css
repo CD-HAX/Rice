@@ -1,0 +1,89 @@
+
+#clock {
+  background-color: @surface_container;
+  color: @secondary;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 2px;
+}
+
+#temperature {
+  background-color: @surface_container;
+  color: @secondary;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 1px;
+  padding-right: 4px;
+}
+
+#temperature.critical {
+  background-color: @surface_container;
+  color: @error;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 1px;
+  padding-right: 4px;
+}
+
+#pulseaudio {
+  background-color: @surface_container;
+  color: @tertiary;
+  border-radius: inherit;
+  margin-right: 6px;
+  margin-top: 5px;
+  padding-right: 10px;
+  padding-left: 9px;
+  min-width: 40px;
+}
+
+#memory {
+  background-color: @surface_container;
+  margin-left: 6px;
+  margin-top: 4px;
+  padding: 4px 10px;
+  color: @secondary;
+}
+
+#tray {
+  background-color: @surface_container;
+  color: @secondary;
+  margin-left: 6px;
+  border-radius: inherit;
+  margin-top: 5px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+}
+
+#network {
+  background-color: @surface_container;
+  margin-left: 10px;
+  color: @secondary;
+  padding: 4px 2px;
+  margin-top: 5px;
+  border-radius: inherit;
+}
+
+#power-profiles-daemon {
+  background-color: @surface_container;
+  color: @secondary;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-top: 5px;
+  padding-right: 2px;
+}
+
+
+#custom-swaync {
+  border-radius: 4px; /* Radius dimension, Top-left, bottom-left, bottom-right, top-right */
+  padding:4px 4px 2px 4px;    /* PADDING dimension TOP, RIGHT, BOTTOM, LEFT. Think of it as a clockwise line */
+  margin-top: 5px;
+  background-color: @surface_container;
+  color: @secondary;
+}
+
