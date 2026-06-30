@@ -72,7 +72,7 @@ inputbar {
     padding:                     15px;
     border-radius:               10px;
     background-color:            @primary-fixed-dim;
-    text-color:                  @on-primary;
+    text-color:                  @tertiary-container;
     children:                    [ "dummy", "prompt", "dummy"];
 }
 
@@ -92,7 +92,7 @@ message {
     padding:                     15px;
     border-radius:               10px;
     background-color:            @surface-container;
-    text-color:                  @on-secondary;
+    text-color:                  @tertiary;
 }
 textbox {
     background-color:            inherit;
@@ -138,6 +138,6 @@ element-text {
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            @secondary;
-    text-color:                  @on-secondary;
+    background-color:            @tertiary;
+    text-color:                  @tertiary-container;
 }

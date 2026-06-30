@@ -111,13 +111,13 @@ mode-switcher{
 button {
     padding:                     12px;
     border-radius:               0px;
-    background-color:            @secondary;
+    background-color:            @on-secondary;
     text-color:                  @secondary-fixed-dim;
     cursor:                      pointer;
 }
 button selected {
     background-color:            @tertiary;
-    text-color:                  @tertiary-fixed-dim;
+    text-color:                  @on-tertiary-container;
 }
 
 /*****----- Listview -----*****/
