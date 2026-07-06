@@ -1,6 +1,7 @@
 @import url("colors/colors.css");
 @import url("styles/taskbar.css");
 @import url("styles/modules.css");
+@import url("styles/battery.css");
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */

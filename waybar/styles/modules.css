@@ -9,6 +9,8 @@
   padding-bottom: 2px;
 }
 
+
+
 #temperature {
   background-color: @surface_container;
   color: @secondary;

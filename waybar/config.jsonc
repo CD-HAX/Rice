@@ -10,9 +10,10 @@
       "./modules/tray.jsonc",
       "./modules/power_profile.jsonc",
       "./modules/audio.jsonc",
-      "./modules/sway.jsonc",
+      "./modules/swaync.jsonc",
       "./modules/clock.jsonc",
-      "./modules/temp.jsonc"
+      "./modules/temp.jsonc",
+      "./modules/bat.jsonc"
     ],
   
     
@@ -24,7 +25,7 @@
         "network", "group/tray"
     ],
     "modules-right": [
-        "group/clock", "temperature", "group/audio", "power-profiles-daemon", "custom/swaync"
+        "group/clock", "custom/battery", "temperature", "group/audio", "power-profiles-daemon", "custom/swaync"
     ]
 
 }

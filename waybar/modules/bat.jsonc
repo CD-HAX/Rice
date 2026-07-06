@@ -1,0 +1,11 @@
+{
+
+  "custom/battery": {
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/bat.sh",
+    "show-icon": true,
+    "markup": true,
+    "hide-if-empty": false,
+    "interval": 5
+  }
+}
