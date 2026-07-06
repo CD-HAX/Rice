@@ -1,6 +1,6 @@
 #!/bin/sh
 
-device=$(upower -e | while read -r d; do
+device=$(upower -e | while read -r d; do   
   info=$(upower -i "$d")
   echo "$info" | grep -qi "model:.*compx VXE" &&
     echo "$info" | grep -q "present:[[:space:]]*yes" &&
@@ -8,12 +8,12 @@ device=$(upower -e | while read -r d; do
       echo "$d"
       break
     }
-done)
+done) # Get device by checking through all devices and matching "battery" and then remove the space.
 
-percent=$(upower -i "$device" | awk '/percentage:/ {
+percent=$(upower -i "$device" | awk '/percentage:/ {    
     gsub("%", "")
     print $2
-}')
+}') #Getting the battery percentage and removing whitespaces.
 
 if [ "$percent" -ge 95 ]; then
   icon=""
