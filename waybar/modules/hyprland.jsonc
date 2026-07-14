@@ -1,7 +1,7 @@
 {
     "hyprland/workspaces": {
         "format": "{name}",
-        "on-click": "activate",
+        "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace({id = {id}}))'",
         "icon-size": 16,
         "format-icons": {
             "1": "",

@@ -1,0 +1,56 @@
+#custom-battery.full {
+  background-color: @surface_container;
+  color: #44ce1b;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 1px;
+  padding-right: 4px;
+}
+
+#custom-battery.high {
+  background-color: @surface_container;
+  color: #bbdb44;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 1px;
+  padding-right: 4px;
+}
+
+
+#custom-battery.medium {
+  background-color: @surface_container;
+  color: #f7e379;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 1px;
+  padding-right: 4px;
+}
+
+
+#custom-battery.low {
+  background-color: @surface_container;
+  color: #f2a134;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 1px;
+  padding-right: 4px;
+}
+
+#custom-battery.critical {
+  background-color: @surface_container;
+  color: #e51f1f;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 6px;
+  padding-left: 4px;
+  padding-bottom: 1px;
+  padding-right: 4px;
+}

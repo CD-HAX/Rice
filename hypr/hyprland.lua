@@ -13,9 +13,9 @@ require("auto_exec")
 require("env")
 require("decorations")
 require("binds")
-require("workspaces")
+require("windowrules")
 require("colors")
-
+require("window_size")
 -----------------------
 ----- PERMISSIONS -----
 -----------------------

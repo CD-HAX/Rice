@@ -10,8 +10,12 @@
       "./modules/tray.jsonc",
       "./modules/power_profile.jsonc",
       "./modules/audio.jsonc",
-      "./modules/sway.jsonc",
-      "./modules/clock.jsonc"
+      "./modules/swaync.jsonc",
+      "./modules/clock.jsonc",
+      "./modules/cputemp.jsonc",
+      "./modules/bat.jsonc",
+      "./modules/gputemp.jsonc",
+      "./modules/mpris.jsonc"
     ],
   
     
@@ -20,10 +24,10 @@
         "group/hyprland",  "memory"
     ],
     "modules-center": [
-        "network", "group/tray"
+        "network", "group/tray", "mpris",
     ],
     "modules-right": [
-        "group/clock", "group/audio", "power-profiles-daemon", "custom/swaync"
+        "group/clock", "custom/battery", "custom/cpu", "custom/gpu", "group/audio",  "power-profiles-daemon", "custom/swaync"
     ]
 
 }

@@ -1,0 +1,18 @@
+{
+  "mpris": {
+    "format": "{player_icon} {status_icon} <i>{artist} - {title}</i>",
+    "player": "playerctld",
+    "max-length": 50,
+    "on-click": "playerctl play-pause",
+    "format-paused": "{player_icon} {status_icon} {artist} - {title}",
+    "player-icons": {
+      "default": "",
+      "spotify": " ",
+      "mpv": " "
+    },
+    "status-icons": {
+      "paused": " ⏸",
+      "playing": " ▶"
+    }
+  },
+}

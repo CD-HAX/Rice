@@ -1,0 +1,29 @@
+/* Base style for the MPRIS module */
+#mpris {
+    background-color: @surface_contianer; /* Catppuccin Mocha Crust */
+    color: @primary;
+    padding: 0 12px;
+    margin-top: 4px;
+    margin-right: 2px;
+    margin-left: 6px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Change styling when media is actively playing */
+#mpris.playing {
+    background-color: @surface_container; /* Soft green */
+    color: @primary;
+}
+
+/* Change styling when media is paused */
+#mpris.paused {
+    background-color: @surface_container; /* Soft red/pink */
+    color: @primary;
+    font-style: italic;
+}
+
+/* Target a specific application (e.g., Spotify) */
+#mpris.spotify {
+    border-bottom: 2px solid #1ed760; /* Spotify Green underline */
+}

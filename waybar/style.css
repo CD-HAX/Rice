@@ -1,10 +1,13 @@
 @import url("colors/colors.css");
 @import url("styles/taskbar.css");
+@import url("styles/modules.css");
+@import url("styles/mpris.css");
+@import url("styles/battery.css");
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     all: unset;
-    font-family: JetBrainsMono Nerd Font, Symbols Nerd Font, sans-serif;
+    font-family: InputMonoNarrow-Medium, Symbols Nerd Font, sans-serif;
     border-radius : 4px;
 }
 
@@ -18,15 +21,6 @@ window#waybar {
     background: transparent;
 }
 
-#clock {
-  background-color: @surface_container;
-  color: @secondary;
-  border-radius: 4px;
-  margin-top: 5px;
-  margin-right: 6px;
-  padding-left: 4px;
-  padding-bottom: 2px;
-}
 
 menuitem label {
   color: @secondary;
@@ -40,71 +34,9 @@ menuitem:hover label {
   color: @secondary;
 }
 
-#tray>.passive {
-  -gtk-icon-effect: dim;
-}
-
 
 #tray>.needs-attention {
   -gtk-icon-effect: highlight;
-  color: @secondary;
-
-}
-
-
-#pulseaudio {
-  background-color: @surface_container;
-  color: @secondary;
-  border-radius: inherit;
-  margin-right: 6px;
-  margin-top: 5px;
-  padding-right: 10px;
-  padding-left: 9px;
-  min-width: 40px;
-}
-
-#memory {
-  background-color: @surface_container;
-  margin-left: 6px;
-  margin-top: 4px;
-  padding: 4px 10px;
-  color: @secondary;
-}
-
-#tray {
-  background-color: @surface_container;
-  color: @secondary;
-  margin-left: 6px;
-  border-radius: inherit;
-  margin-top: 5px;
-  padding-right: 2px;
-  padding-bottom: 1px;
-}
-
-#network {
-  background-color: @surface_container;
-  margin-left: 10px;
-  color: @secondary;
-  padding: 4px 2px;
-  margin-top: 5px;
-  border-radius: inherit;
-}
-
-#power-profiles-daemon {
-  background-color: @surface_container;
-  color: @secondary;
-  border-radius: 4px;
-  margin-right: 6px;
-  margin-top: 5px;
-  padding-right: 2px;
-}
-
-
-#custom-swaync {
-  border-radius: 4px; /* Radius dimension, Top-left, bottom-left, bottom-right, top-right */
-  padding:4px 4px 2px 4px;    /* PADDING dimension TOP, RIGHT, BOTTOM, LEFT. Think of it as a clockwise line */
-  margin-top: 5px;
-  background-color: @surface_container;
   color: @secondary;
 
 }
@@ -125,7 +57,7 @@ menuitem:hover label {
 #workspaces button {
     all: initial;
     padding: 0px 10px;
-    color: @secondary_container;
+    color: @tertiary_container;
     opacity: 0.6;
     margin-top: 0px;
     padding: 0px 10px; /* The padding dimension is height : width */
