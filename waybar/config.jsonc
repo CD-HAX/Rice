@@ -12,10 +12,15 @@
       "./modules/audio.jsonc",
       "./modules/swaync.jsonc",
       "./modules/clock.jsonc",
+<<<<<<< HEAD
       "./modules/cputemp.jsonc",
       "./modules/bat.jsonc",
       "./modules/gputemp.jsonc",
       "./modules/mpris.jsonc"
+=======
+      "./modules/temp.jsonc",
+      "./modules/bat.jsonc"
+>>>>>>> d71483aefb697760a519ab4e7588fa31ba6d6520
     ],
   
     
@@ -27,7 +32,11 @@
         "network", "group/tray", "mpris",
     ],
     "modules-right": [
+<<<<<<< HEAD
         "group/clock", "custom/battery", "custom/cpu", "custom/gpu", "group/audio",  "power-profiles-daemon", "custom/swaync"
+=======
+        "group/clock", "custom/battery", "temperature", "group/audio", "power-profiles-daemon", "custom/swaync"
+>>>>>>> d71483aefb697760a519ab4e7588fa31ba6d6520
     ]
 
 }

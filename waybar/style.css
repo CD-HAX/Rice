@@ -1,7 +1,10 @@
 @import url("colors/colors.css");
 @import url("styles/taskbar.css");
 @import url("styles/modules.css");
+<<<<<<< HEAD
 @import url("styles/mpris.css");
+=======
+>>>>>>> d71483aefb697760a519ab4e7588fa31ba6d6520
 @import url("styles/battery.css");
 
 * {
