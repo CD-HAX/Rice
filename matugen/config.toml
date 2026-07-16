@@ -21,7 +21,7 @@ prefer = "saturation"
 # For example: testimage.png.0cfd2d624b3d09bf6246b7be9ca79e207e7aa1189d961d44949628b99811bb9d.json
 # You can modify the cache and it will then be loaded when using the same image.
 # The colors are defined using the #RRGGBBAA format.
-caching = false
+caching = true
 
 # Changing the syntax
 # Expr is for keywords like {{ <keyword> }}
@@ -115,6 +115,11 @@ name = "KDE-colors"
 input_path = '~/.config/matugen/templates/kvantum.kvconfig'
 output_path = '~/.local/share/color-schemes/matugen.colors'
 
+[templates.obs-studio]
+name = "obs-studio"
+input_path = '~/.config/matugen/templates/obs.obt'
+output_path = '~/.config/obs-studio/themes/matugen.obt'
+
 
 
 
@@ -126,7 +131,7 @@ index = 1
 
 # Defaults to the type from CLI if unspecified.
 # One of `SchemeContent`, `SchemeExpressive`, `SchemeFidelity`, `SchemeFruitSalad`, `SchemeMonochrome`, `SchemeNeutral`, `SchemeRainbow`, `SchemeTonalSpot`, `SchemeVibrant`
-type = "SchemeFidelity"
+type = "SchemeVibrant"
 
 # For testing of the `--continue-on-error` flag
 # [templates.ishoulderror]
