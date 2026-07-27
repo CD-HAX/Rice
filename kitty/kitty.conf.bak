@@ -1,4 +1,6 @@
 include theme.conf
+
+
 font_family      InputMonoNarrow-Medium
 bold_font        MapleMono-Bold
 italic_font      MapleMono-Italic
@@ -7,8 +9,8 @@ bold_italic_font MapleMono-BoldItalic
 font_size 13
 
 
-Url Settings
-url_color #61afef
+# Url Settings
+# url_color #61afef
 
 url_style curly
 
@@ -23,8 +25,6 @@ input_delay 3
 
 ## TAB BAR ##
 
-#tab_bar_style powerline
-
-
+tab_bar_style powerline
 
 

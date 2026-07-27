@@ -9,11 +9,7 @@
   padding-bottom: 2px;
 }
 
-<<<<<<< HEAD
 #custom-gpu {
-=======
-#temperature {
->>>>>>> d71483aefb697760a519ab4e7588fa31ba6d6520
   background-color: @surface_container;
   color: @secondary;
   border-radius: 4px;
@@ -24,7 +20,6 @@
   padding-right: 4px;
 }
 
-<<<<<<< HEAD
 #custom-gpu.critical {
   background-color: @surface_container;
   color: @error;
@@ -47,9 +42,6 @@
 }
 
 #custom-cpu.critical {
-=======
-#temperature.critical {
->>>>>>> d71483aefb697760a519ab4e7588fa31ba6d6520
   background-color: @surface_container;
   color: @error;
   border-radius: 4px;
@@ -71,10 +63,7 @@
   min-width: 40px;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d71483aefb697760a519ab4e7588fa31ba6d6520
 #memory {
   background-color: @surface_container;
   margin-left: 6px;
@@ -108,12 +97,8 @@
   border-radius: 4px;
   margin-right: 6px;
   margin-top: 5px;
-<<<<<<< HEAD
   padding-right: 3px;
   padding-left: 3px;
-=======
-  padding-right: 2px;
->>>>>>> d71483aefb697760a519ab4e7588fa31ba6d6520
 }
 
 

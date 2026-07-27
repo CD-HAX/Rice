@@ -31,6 +31,10 @@ expr_postfix = "}}"
 # Block is for stuff like for loops etc.
 block_prefix = "<*"
 block_postfix = "*>"
+# Defaults to the type from CLI if unspecified.
+# One of `SchemeContent`, `SchemeExpressive`, `SchemeFidelity`, `SchemeFruitSalad`, `SchemeMonochrome`, `SchemeNeutral`, `SchemeRainbow`, `SchemeTonalSpot`, `SchemeVibrant`
+type = "SchemeFidelity"
+#this_should_not_exist = 123
 
 # Imports json files just like `--import-json` does.
 # Relative paths will be resolved from the path `config.toml` is in.
@@ -44,15 +48,6 @@ block_postfix = "*>"
 # 0 = most dominant, 1 = 2nd most dominant, etc.
 # IF the CLI flag is specified, it will override this value.
 
-[config.wallpaper]
-# Whether to set the wallpaper or not
-set = true
-
-# The base command to run for applying the wallpaper.
-# Keywords like {{ image }} or anything that works inside of hooks works here.
-# You could also set a static color if you use the color keywords and the wallpaper setter supports it.
-command = "awww img --transition-type center {{ image }}"
-#command = "mpvpaper -fp -o \"no-audio loop\" ALL {{ image }}"
 
 # For example, killing the wallpaper daemon. Usage is like a normal hook.
 # pre_hook = ""
@@ -115,6 +110,11 @@ name = "KDE-colors"
 input_path = '~/.config/matugen/templates/kvantum.kvconfig'
 output_path = '~/.local/share/color-schemes/matugen.colors'
 
+[templates.obs-studio]
+name = "obs-studio"
+input_path = '~/.config/matugen/templates/obs.obt'
+output_path = '~/.config/obs-studio/themes/matugen.obt'
+
 
 
 
@@ -123,10 +123,6 @@ output_path = '~/.local/share/color-schemes/matugen.colors'
 # Defaults to a value of 0 if unspecified, determines the order that each template is processed.
 # You can use index = n to force a particular template hook to run after everything else, and index = -n for before everything else
 index = 1
-
-# Defaults to the type from CLI if unspecified.
-# One of `SchemeContent`, `SchemeExpressive`, `SchemeFidelity`, `SchemeFruitSalad`, `SchemeMonochrome`, `SchemeNeutral`, `SchemeRainbow`, `SchemeTonalSpot`, `SchemeVibrant`
-type = "SchemeFidelity"
 
 # For testing of the `--continue-on-error` flag
 # [templates.ishoulderror]
@@ -155,4 +151,3 @@ expr_postfix = "}}"
 # Example: To use the original red color you would use `{{ red_source }}` instead of `{{ red }}`
 # If you don't want to use the other colors that are automatically generated (on_color, on_color_container) you can just import a custom json with the colors instead.
 # For an example of importing json see: https://iniox.github.io/#matugen/usage/importing-json
-
