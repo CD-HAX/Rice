@@ -1,0 +1,7 @@
+No running instances for "/home/odysseus/.config/quickshell/shell.qml"
+[32m  INFO[0m: Launching config: "/home/odysseus/.config/quickshell/shell.qml"
+[32m  INFO[0m: Shell ID: "41f48adb40ec0e364fd06e157a7b8200" Path ID "41f48adb40ec0e364fd06e157a7b8200"
+[32m  INFO[0m: Saving logs to "/run/user/1000/quickshell/by-id/ar05t3jdkt/log.qslog"
+[32m  INFO[0m: Configuration Loaded
+[33m  WARN[97m scene[0m: @widgets/NotificationWidget.qml[30:13]: Unable to assign [undefined] to QString
+[33m  WARN[97m scene[0m: @widgets/NotificationWidget.qml[30:13]: Unable to assign [undefined] to QString
