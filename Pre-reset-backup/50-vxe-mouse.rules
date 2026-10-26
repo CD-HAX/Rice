@@ -1,0 +1,3 @@
+ACTION=="add|change", SUBSYSTEM=="usb", ATTR{idVendor}=="3554", ATTR{idProduct}=="f58a", ATTR{power/control}="on"
+SUBSYSTEM=="power_supply", ATTR{model_name}=="Compx VXE NordicMouse 1K Dongle", ENV{UPOWER_BATTERY_TYPE}="mouse"
+
